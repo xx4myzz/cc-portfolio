@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amy's cc p5.js portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>amy zhang</h1>
+    </header>
+    <nav>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="ccprojects.html">projects</a>
+        <a href="contact.html">contact</a>
+    </nav>
+    <div class="page-title">
+        <h2>~ the projects ~</h2>
+      </div>
+      
+      <div class="page-description">
+        <p>here is my collection of p5.js projects created during my creative computation class</p>
+      </div>
+    <main>
+    <div class="content">
+    <div class="pbar">
+        <h1>projects</h1>
+        <p><a href="p1.html">lost & found</a></p>
+        <p><a href="p2.html">face generator</a></p>
+        <p><a href="p3.html">experimental clock</a></p>
+        <p><a href="p4.html">exquisite corpse</a></p>
+        <p><a href="p5.html">optical illusion</a></p>
+        <p><a href="p6.html">data portrait</a></p>
+        <p><a href="p7.html">autobiographical game</a></p>
+      </div>
+      <div class="sketch">
+      <iframe width="400px" height="673px" style="border: none;" src="https://editor.p5js.org/zhana059/full/N-Gj7jpnZ"></iframe>
+    </div>
+    <div class="description">
+        <h2>description</h2>
+        <h3>group: charlotte fei & kevin qiu</h3>
+        <p>Charlotte's background story: Allen is a minimalist baby robot born in the year 2050. He works at the front desk in a space travel rocket station.</p>
+            
+        <p>Kevin's background story: The horse went to the mountain and tried to meditate into a saint. At the time he almost achieved human form, he started lifting, mostly deadlifting, to work on legs. That’s how he got the booty, then his legs got cold so he had to wear socks.</p>
+            
+        <p>My original character's background story: Jerry is a cow chimera with a human torso and snake body. He was unfortunately found in an abandoned science lab. He was adopted by a farmer named Ben. He slowly recovered under Ben's care, and they enjoy line dancing at the local public barn. He lived a happy life with Ben until...</p>
+            
+        <h3>new background story:</h3>
+        <p>Ben and Jerry had a terrible accident while driving their tractor on the freeway. Somehow, their tractor crumpled like tissue paper, and they both went into comas. Ben was unable to be saved, and Jerry could be saved but he needed a new body. The hospital was researching robot torsos and had one available for Jerry. Seeing that Ben was a donor, the doctors were able to salvage just his legs and transplant them onto Jerry and the robot torso. After Jerry, recovered he missed Ben everyday and could not line dance anymore. Instead, he goes to discos to honor Ben by continuing to use his legs for dance.</p>
+      </div>
+      <div class="reflection">
+        <h2>reflection</h2>
+        <p>I knew I wanted Jerry to be a dancer since his legs look like they're dancing. I started out by coding Jerry at his resting position without arguments/parameters. I used functions to separate sections which made it easier for me to keep track of the code.</p> 
+
+        <p>After completely coding out the resting sketch, I started to code how his arms and legs would change position for his dancing state. Then I started to add in the components I would need for his dancing state -- music, random flashing background to mimic disco ball lights, random flashing brighter lights for his robot chest. I used the keyIsPressed code a lot so that the dancing state components only occurred when music was playing and he was dancing.</p> 
+            
+        <p>I ran into trouble with the music, since at first, my parameters were not thorough enough and the music kept starting and layering on top of music already playing. The music also would not stop when no keys were pressed. Eventually, I figured out I needed to add "&& music.isPlaying == false" to prevent the layering and making the music stop in his resting state.</p> 
+            
+        <p>Finally, I looked up what arguments/parameters were and thought I could make Jerry's head, neck, and ears bop while he danced. Arguments/parameters made it really easy to keep all the components making up his head together and not start flying all over.</p>
+            
+        <p>Functions/arguments/parameters help keep the code manageable and organized, and was especially useful when animating groups of objects. I was able to move whole sections, like Jerry's head, altogether instead of trying to figure out how to code each individual object and coordinate all the pieces.</p>
+      </div>
+      </div>
+    </main>

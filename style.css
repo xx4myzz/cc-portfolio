@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+body {
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  line-height: 1.6;
+  color: #6a6969;
+  background-color: #fff;
+}
+header {
+  background-color: #e2fffe;
+  color: #6a6969;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+nav a:hover {
+  background-color: #ddd;
+}
+.page-title {
+  color: #6a6969;
+  margin: 20px 0;
+  text-align: center;
+}
+.page-description {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  text-align: center;
+}
+main {
+  padding: 20px;
+  display: grid;
+  margin: 0 auto 30px;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.content{
+  display:grid;
+  grid-template-areas:
+  'menu main description'
+  'menu reflection reflection';
+  grid-template-columns: 300px 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  width: 100%; 
+}
+
+.content > div {
+  padding: 20px 0;
+}
+
+.pbar { 
+  grid-area: menu; 
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  min-width:300px;
+}
+
+.pbar h1 {
+  color: #5eb6c4;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e2fffe;
+  padding-bottom: 5px;
+}
+
+.pbar p {
+  margin: 10px 0;
+}
+
+.pbar a {
+  color: #6a6969;;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.pbar a:hover {
+  color: #73bfda;
+  text-decoration: underline;
+}
+.sketch { 
+  grid-area: main; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description { 
+  grid-area: description;
+  color: #6a6969; 
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.description h2 {
+  color: #5eb6c4;
+}
+
+.description p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #6a6969;
+}
+
+.reflection { 
+  grid-area: reflection; 
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.reflection h2 {
+  color: #5eb6c4;
+}
+
+.reflection p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: #6a6969;
+}
+
+/* Responsive Considerations */
+@media (max-width: 768px) {
+.content {
+  grid-template-areas: 
+  'menu'
+  'main'
+  'description'
+  'reflection';
+  grid-template-columns: 1fr;
+}
+}
+
+.contact-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input,
+.contact-form textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+.contact-form button {
+  padding: 10px;
+  background-color: #bffffd;
+  border: none;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #ddd;
+}

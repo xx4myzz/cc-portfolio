@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amy's cc p5.js portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>amy zhang</h1>
+    </header>
+    <nav>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="ccprojects.html">projects</a>
+        <a href="contact.html">contact</a>
+    </nav>
+    <div class="page-title">
+        <h2>~ the projects ~</h2>
+      </div>
+      
+      <div class="page-description">
+        <p>here is my collection of p5.js projects created during my creative computation class</p>
+      </div>
+    <main>
+    <div class="content">
+        <div class="pbar">
+        <h1>projects</h1>
+        <p><a href="p1.html">lost & found</a></p>
+        <p><a href="p2.html">face generator</a></p>
+        <p><a href="p3.html">experimental clock</a></p>
+        <p><a href="p4.html">exquisite corpse</a></p>
+        <p><a href="p5.html">optical illusion</a></p>
+        <p><a href="p6.html">data portrait</a></p>
+        <p><a href="p7.html">autobiographical game</a></p>
+        </div>
+    <div class="sketch">
+    <iframe width="400px" height="442px" style="border: none;" src="https://editor.p5js.org/zhana059/full/VaWm_8bsx"></iframe>
+    </div>
+    <div class="description">
+        <h2>description</h2>
+        <p></p>
+        <h3>lifecycle of a butterfly</h3>
+        <p></p>
+        <p>egg</p>
+        <p>caterpillar</p>
+        <p>chrysallis</p>
+        <p>butterfly</p>
+      </div>
+      <div class="reflection">
+        <h2>reflection</h2>
+        <p>This project was really fun as a concept but, in practice, really time-consuming. It got me really looking forward to learning more about how to simplify code.</p>
+
+        <p>My three sketches were the butterfly life cycle, the fly life cycle, and growing out roots. I thought I would do the fly life cycle since it seemed easy, but when I started coding, I was more inclined to do the prettier aesthetics of a butterfly cycle. The clock is novel to me in that I knew of the cycle shallowly (I knew the order) but did not know the exact amount of time the butterfly spent at each stage.</p>
+            
+        <p>I started with the non-mobile: the light blue background, leaf, stem, egg, chryssalis. Then I added did a lil research about the butterfly life cycle to make the clock as proportionally accurate as possible. I used the average life cycles of a few different butterfly species, then scaled it to 30 second intervals so that my animation would cycle twice in 60 seconds.</p> 
+            
+        <p>I then used the if (second()) code to make the egg and chrysallis appear during the seconds that I had calculated. Next, I moved onto the caterpillar. I had to code each component of the caterpillar separetely and keep adjusting so that they lined up without too much space or too much overlap. It took a while because there was a lot of adjusting small increments and waiting for the caterpillar part of the cycle to play. While watching the second loop, I realized the caterpillar's size and position weren't resetting so I had to play around with the code to fix it. Eventually I settled with an if() then() code to reset the caterpillar's size and position during the time it was not playing.</p> 
+            
+        <p>Next, I coded the butterfly. I created a non-moving butterfly and thought the clock was not very fun -- and also not very clock-like. So, I coded the circling sun to add more movement into my sketch. Since the sun was circling, I thought of sunrise and sunset and wanted to code a day/night transitioning background. I found fading code online from a fading text sketch and reworked it to do what I needed. I added a dark blue fading square across the whole canvas. Since I am not totally sure what the code exactly means, I couldn't make it perfectly fit my sketch. After a few loops, you can notice the day and night transitions do not match the circling sun.</p> 
+            
+        <p>Since my caterpillar moves, I was not satisfied with the immobile butterfly. Thus, I added random() to the wing shape size to and the body to make it look like the butterfly is fluttering.</p>
+            
+        <p>Overall, the end result of the project is really fun to watch, but I don't think it will alter the way I tell time. I am excited to learn more about simplifying the code / learning about ways that will make the code shorter since I had to individually code each line and shape and coordinate them.</p>
+      </div>
+      </div>
+    </main>
