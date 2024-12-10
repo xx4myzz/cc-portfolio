@@ -42,6 +42,7 @@ nav a:hover {
   padding: 0 20px;
   text-align: center;
   box-sizing: border-box;
+  line-height: 1.6;
 }
 main {
   padding: 20px;
