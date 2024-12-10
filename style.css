@@ -36,7 +36,7 @@ nav a:hover {
   text-align: center;
 }
 .page-description {
-  max-width: 800px;
+  width: 100%; 
   margin: 0 auto 30px;
   padding: 0 20px;
   text-align: center;
